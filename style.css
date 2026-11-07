@@ -133,20 +133,46 @@ body {
   html,
   body {
     height: 100%;
-    min-height: 100dvh;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   body {
-    position: static;
-    inset: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
     width: 100%;
   }
+
+  main,
+  .container,
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  video {
+    height: 65dvh;
+    width: auto;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+  }
+
+  .button-group,
+  .actions {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+}
 
   .logo {
     top: calc(env(safe-area-inset-top, 0px) + 16px);
