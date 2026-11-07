@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#fbf9f3" />
+    <title>tomatolayer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button type="button" class="logo" id="logo" aria-label="tomatolayer">
+      <img src="assets/logo.svg" alt="tomatolayer" />
+    </button>
+
+    <main class="stage">
+      <div class="film-frame">
+        <video
+          id="film"
+          src="assets/film.m4v"
+          muted
+          autoplay
+          loop
+          playsinline
+          webkit-playsinline
+        ></video>
+      </div>
+
+      <nav class="actions" aria-label="links">
+        <a class="store" href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+          <img src="assets/appstore.svg" alt="Download on the App Store" />
+        </a>
+        <a class="instagram" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="assets/instagram.svg" alt="Instagram" />
+        </a>
+      </nav>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
