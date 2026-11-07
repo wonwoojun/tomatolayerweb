@@ -132,45 +132,55 @@ body {
 @media screen and (max-width: 768px) {
   html,
   body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
   }
 
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100dvh;
-    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100dvh !important;
+    width: 100% !important;
   }
 
-  main,
-  .container,
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  /* 중앙 전체 무대 */
+  .stage {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100dvh !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  video {
-    height: 65dvh;
-    width: auto;
-    aspect-ratio: 9 / 16;
-    object-fit: contain;
+  /* 영상 + 버튼 묶음 */
+  .cluster {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  .button-group,
+  /* 비디오 프레임 및 영상 크기 */
+  .film-frame,
+  video#film {
+    height: 65dvh !important;
+    width: auto !important;
+    aspect-ratio: 9 / 16 !important;
+    object-fit: contain !important;
+  }
+
+  /* 영상 아래 버튼 그룹 */
+  .cluster > div:last-child,
+  .cluster a,
   .actions {
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+    margin-top: 16px !important;
   }
 }
 
