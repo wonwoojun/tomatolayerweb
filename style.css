@@ -49,7 +49,7 @@ body {
   width: 100vw;
   height: 100dvh;
   margin: 0;
-  padding: 0;
+  padding-bottom: 24px; /* 아래로 살짝 무게중심을 내려주는 패딩 */
 }
 
 /* 영상 + 버튼 묶음 컨테이너 */
@@ -64,10 +64,10 @@ body {
 
 /* 9:16 비디오 프레임 (모바일 기준 세로 65dvh 시원하게 확보) */
 .film-frame {
-  height: 65dvh;
+  width: 82vw; /* 모바일 좌우 여백을 적당히 남기고 큼직하게 채움 */
+  max-width: 340px;
   aspect-ratio: 9 / 16;
-  width: auto;
-  max-width: calc(100vw - 32px);
+  height: auto; /* 너비에 맞춰 9:16으로 시원하게 커짐 */
   margin: 0;
   border-radius: 0;
   box-shadow: none;
